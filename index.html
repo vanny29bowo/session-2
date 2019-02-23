@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>HTML</h1>
+
+	<p>Angka 1</p>
+	<input type="text" id="angka1"> </input> <br>
+	<p>Angka 2</p> 
+	<input type="text" id="angka2"> </input> <br> <br>
+	
+	<input type="submit" id="plus" 	 value="+"> 
+	<input type="submit" id="kurang" value="-">
+	<input type="submit" id="kali"   value="*">
+	<input type="submit" id="bagi"   value=":">
+
+	<p>hasil = <div id="hasil"></div></p>  
+
+<script type="text/javascript">
+
+
+	function operasi1tambah() {
+		var angka1 = Number(document.getElementById("angka1").value)
+		var angka2 = Number(document.getElementById("angka2").value)
+		var hasil = angka1 + angka2
+		//alert(hasil)
+		document.getElementById("hasil").textContent = hasil
+	}
+	document.getElementById('plus').onclick = operasi1tambah
+
+	function operasi1kurang() {
+		var angka1 = Number(document.getElementById("angka1").value)
+		var angka2 = Number(document.getElementById("angka2").value)
+		var hasil = angka1 - angka2
+		//alert(hasil)
+		document.getElementById("hasil").textContent = hasil
+	}
+	document.getElementById('kurang').onclick = operasi1kurang
+
+	function operasi1kali() {
+		var angka1 = Number(document.getElementById("angka1").value)
+		var angka2 = Number(document.getElementById("angka2").value)
+		var hasil = angka1 * angka2
+		//alert(hasil)
+		document.getElementById("hasil").textContent = hasil
+	}
+	document.getElementById('bagi').onclick = operasi1kali
+
+	function operasi1bagi() {
+		var angka1 = Number(document.getElementById("angka1").value)
+		var angka2 = Number(document.getElementById("angka2").value)
+		var hasil = angka1 / angka2
+		//alert(hasil)
+		document.getElementById("hasil").textContent = hasil
+	}
+	document.getElementById('bagi').onclick = operasi1bagi
+	
+
+	//-------------------------------------------------------
+
+
+</script>
+</body>
+</html>
